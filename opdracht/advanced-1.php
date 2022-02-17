@@ -18,7 +18,7 @@
         </select>
         <select name="achtergrond-kleuren">
             <?php
-                $kleuren = array("red", "blue", "green", "black", "brown");
+                $kleuren = array("white","red", "blue", "green", "black", "brown");
                 foreach ($kleuren as $kleur){
                     echo "<option value='$kleur'> $kleur </option>";
                 };

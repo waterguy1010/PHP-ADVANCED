@@ -12,7 +12,7 @@ body{
     background-color: <?php echo $_POST ['achtergrond-kleuren']?>;
 }
 table, th, td {
-  padding: <?php echo $_POST ['tbname'] ?>px  ;
+  border: <?php echo $_POST ['tbname'] ?>px solid black;
 
 }
 </style>
@@ -22,19 +22,12 @@ table, th, td {
 
 <table>
   <tr>
-    <th>Company</th>
-    <th>Contact</th>
-    <th>Country</th>
-  </tr>
-  <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
-  </tr>
-  <tr>
-    <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td>
-    <td>Mexico</td>
+    <?php
+     $info = array("abdel", "souhali", "kanye", "amsterdam", "voetbal");
+     foreach ($info as $alff){
+      echo "<th>$alff</th>";
+  };
+    ?>
   </tr>
 </table>
 </body>
